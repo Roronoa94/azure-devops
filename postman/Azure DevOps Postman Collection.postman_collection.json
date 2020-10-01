@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "d430c92c-c04c-4147-b8fa-da9391105075",
+		"name": "Azure DevOps Postman Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Commits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3001/azure/git?searchCriteria=getCommits&userName=userName&repository=repositoryName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"azure",
+						"token"
+					],
+					"query": [
+						{
+							"key": "searchCriteria",
+							"value": "getCommits"
+						},
+						{
+							"key": "userName",
+							"value": "userName"
+						},
+						{
+							"key": "repository",
+							"value": "repositoryName"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pull Requests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3001/azure/git?searchCriteria=getPullRequests&userName=userName&repository=repositoryName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"azure",
+						"token"
+					],
+					"query": [
+						{
+							"key": "searchCriteria",
+							"value": "getPullRequests"
+						},
+						{
+							"key": "userName",
+							"value": "userName"
+						},
+						{
+							"key": "repository",
+							"value": "repositoryName"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Repositories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3001/azure/git?searchCriteria=getRepositories&userName=userName&repository=repositoryName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"azure",
+						"token"
+					],
+					"query": [
+						{
+							"key": "searchCriteria",
+							"value": "getPullRequests"
+						},
+						{
+							"key": "userName",
+							"value": "userName"
+						},
+						{
+							"key": "repository",
+							"value": "repositoryName"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
